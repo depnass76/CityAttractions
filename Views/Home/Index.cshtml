@@ -1,0 +1,34 @@
+﻿@model CityAttractions.Data.Root
+
+
+<h4 style="color:blue">@Model.results.Count() Favorite Cities</h4>
+
+<div class="row">
+
+    @foreach (var city in Model.results)
+    {
+        <div class="col-md-6">
+            <div class="card card-body bg-light">
+                <a href="@city.images[0].sizes.thumbnail.url">
+                    <img src="@city.images[0].sizes.thumbnail.url" />
+                </a>
+                <ul class="product-props">
+
+                    <li>
+                        City: @city.id
+                    </li>
+                    <li>
+                        Country: @city.country_id
+                    </li>
+                </ul>
+              <button id="watchButton" class="btn btn-success">Select</button>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+﻿{
+  "Colors": {
+    "Favorite": "Bleu"
+  },
+  "ConnectionStrings": {
+    "CitiesContextDb": "Data Source=(localdb)\\ProjectsV13;Initial Catalog=CitiesTreatDatabase;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+  },
+  "Logginng": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft":  "Warning"
+    }
+  }
+}
+
+
+
